@@ -364,7 +364,8 @@ background-color: #008B8B;
     background: #dbefec;
     color: #fff;
     text-align: center;
-padding-top:10px;
+    padding-top:10px;
+    margin-top: 3em;
   }
 
     #footer h3 {

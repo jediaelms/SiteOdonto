@@ -7,8 +7,6 @@
         <link rel="shortcut icon" href="imagens/favicon.png" />
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     
-
     </head>
     <body style="background-color:#FFFAFA;">
         <nav class="navbar navbar-expand-lg bg-branco menu">
@@ -34,9 +32,9 @@
                         <li class="nav-item efeito">
                             <a class="nav-link efeito efeito-4" href="#tratamentos">Tratamentos</a>
                         </li>
-                        <li class="nav-item efeito">
+                        <!--<li class="nav-item efeito">
                             <a class="nav-link efeito efeito-4" href="#">Contato</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item efeito">
                             <a class="nav-link efeito efeito-4" id="colocar">Agende sua Consulta</a>
                         </li>
@@ -70,22 +68,20 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="titulo-sobre" id="sobrenos"><h3>Sobre nós</h3></div>
+        <br/>
+        <br/>
+        <div class="titulo-sobre" id="sobrenos"><h3>Sobre nós</h3></div>
         <div class="row">
             <div id="sobrefoto" class="col-sm-7 zoom">
-            	<br>
+                <br>
                 <img src="imagens/odontocompany.jpg" width="80% "height="60%">
                 <br>
                 <br>
                 <p>A Odonto atende diversas áreas da odontologia atual e moderna!
                     Somos conhecidos por nossos pacientes, principalmente pelos resultados obtidos por nossos dentistas no restabelecimento dos sorrisos, através das avançadas técnicas de dentística e implantodontia, utilizando a mais alta tecnologia, com segurança e conforto em todas as etapas do tratamento </p>
             </div>
-
             <div id="sobretext" class="col-sm-5">
-            	<br>
+                <br>
                 <h3 style="color:#2cb2a0;">Missão</h3>
                 <p>Tornar melhor e mais acessível o tratamento odontológico a todos os brasileiros através de profissionais capacitados, equipamentos de última geração e ambiente multidisciplinar com qualidade, tecnologia e segurança.</p>
                 <h3 style=" color: #b756b2;">Visão</h3>
@@ -99,170 +95,169 @@
                 </ul>
             </div>
         </div>
+        <div id="container" class="modal-alface-container">
+            <div id="modal-alface-cadastro" class="modal-alface" style="font-family: Nunito-Bold;">
 
-    <div id="container" class="modal-alface-container" id="tratamentos">
-        <div id="modal-alface-cadastro" class="modal-alface" style="font-family: Nunito-Bold;">
-
-            <button class="fechar">X</button>
-            <form action="https://formspree.io/diogohilario@hotmail.com" method="POST">
-                <table cellspacing="20">
-                	<tr>
-                		<th colspan="2" style="text-align: center; border-bottom: 5px">
-                			<h4>Agendamento</h4>
-                		</th>
-                	</tr>
-                    <tr>
-                        <td>
-                            <label for="nome">Nome: </label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="nome">
-                        </td>
-                    </tr>  
-                    <tr>
-                        <td>
-                            <label for="rg">RG: </label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="rg" size="20" maxlength="10"> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>CPF:</label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="1" maxlength="2">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Telefone:</label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="telefone" size="1" maxlength="2"> - <input type="text" name="telefone2" size="9" maxlength="9">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Email:</label>
-                        </td>
-                        <td align="left">
-                            <input type="email" name="email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Data: </label>
-                        </td>
-                        <td align="left">
-                            <input type="Date"> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Horario: </label>
-                        </td>
-                        <td align="left">
-                            <select>
-                                <option value="time" selected="selected">09:00</option>
-                                <option value="time">09:30</option>
-                                <option value="time">10:00</option>
-                                <option value="time">10:30</option>
-                                <option value="time">11:00</option>
-                                <option value="time">11:30</option>
-                                <option value="time">13:30</option>
-                                <option value="time">14:00</option>
-                                <option value="time">14:30</option>
-                                <option value="time">15:00</option>
-                                <option value="time">15:30</option>
-                                <option value="time">16:00</option>
-                                <option value="time">16:30</option>
-                                <option value="time">17:00</option>
-                                <option value="time">17:30</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-
-                <br/>
-                <div class="espaco">
-                	<input type="reset" class="botao1" name="Limpar" value="Limpar">
-                    <input type="submit" class="botao1" name="Enviar">
-                </div>
-            </form>
+                <button class="fechar">X</button>
+                <form action="https://formspree.io/diogohilario@hotmail.com" method="POST">
+                    <table cellspacing="20">
+                        <tr>
+                            <th colspan="2" style="text-align: center; border-bottom: 5px">
+                                <h4>Agendamento</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nome">Nome: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="nome">
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>
+                                <label for="rg">RG: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="rg" size="20" maxlength="10"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>CPF:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="1" maxlength="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Telefone:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="telefone" size="1" maxlength="2"> - <input type="text" name="telefone2" size="9" maxlength="9">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email:</label>
+                            </td>
+                            <td align="left">
+                                <input type="email" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Data: </label>
+                            </td>
+                            <td align="left">
+                                <input type="Date"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Horario: </label>
+                            </td>
+                            <td align="left">
+                                <select>
+                                    <option value="time" selected="selected">09:00</option>
+                                    <option value="time">09:30</option>
+                                    <option value="time">10:00</option>
+                                    <option value="time">10:30</option>
+                                    <option value="time">11:00</option>
+                                    <option value="time">11:30</option>
+                                    <option value="time">13:30</option>
+                                    <option value="time">14:00</option>
+                                    <option value="time">14:30</option>
+                                    <option value="time">15:00</option>
+                                    <option value="time">15:30</option>
+                                    <option value="time">16:00</option>
+                                    <option value="time">16:30</option>
+                                    <option value="time">17:00</option>
+                                    <option value="time">17:30</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <div class="espaco">
+                        <input type="reset" class="botao1" name="Limpar" value="Limpar">
+                        <input type="submit" class="botao1" name="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="titulo-sobre" id="sobrenos"><h3>Tratamentos</h3></div>
-    <div class="container flip">
-    <div class="flip-card1 alinhamento-flip">
-        <div class="flip-card-inner1">
-            <div class="flip-card-front1" style="background-color:  #2cb2a0;">
+        <br/>
+        <br/>
+        
+        <div>
+            <div class="titulo-sobre" id="tratamentos"><h3>Tratamentos</h3></div>
+            <div class="container flip">
+                <div class="flip-card1 alinhamento-flip">
+                    <div class="flip-card-inner1">
+                        <div class="flip-card-front1" style="background-color:  #2cb2a0;">
                             <h4>Ortodontia</h4> 
-             </div>
-        <div class="flip-card-back1">
-            <h5>Ortodontia</h5> 
-            <p>A função principal do tratamento ortodôntico é restabelecer a oclusão dentária (perfeito engrenamento dos dentes).</p>
-        </div>
-        </div>
-    </div>
-    <div class="flip-card1">
-        <div class="flip-card-inner1">
-            <div class="flip-card-front1" style="background-color:  #186D67;">
+                        </div>
+                        <div class="flip-card-back1">
+                            <h5>Ortodontia</h5> 
+                            <p>A função principal do tratamento ortodôntico é restabelecer a oclusão dentária (perfeito engrenamento dos dentes).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card1">
+                    <div class="flip-card-inner1">
+                        <div class="flip-card-front1" style="background-color:  #186D67;">
                             <h4>Odontopediatria</h4> 
-             </div>
-        <div class="flip-card-back1">
-            <h5>Odontopediatria</h5> 
-            <p>A Odontopediatria é o tratamento odontológico preventivo completo para crianças.</p>
-        </div>
-        </div>
-    </div> 
-    </div>
-    <br/>
-    <div class="container flip">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" style="background-color:  #692986;">
+                        </div>
+                        <div class="flip-card-back1">
+                            <h5>Odontopediatria</h5> 
+                            <p>A Odontopediatria é o tratamento odontológico preventivo completo para crianças.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <br/>
+            <div class="container flip">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color:  #692986;">
                             <h4>Clareamento</h4> 
-             </div>
-        <div class="flip-card-back">
-            <h5>Clareamento</h5> 
-            <p>O clareamento dental é um tratamento realizado com substâncias químicas, que modificam a cor do dente.</p>
-        </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" style="background-color: #EA0952;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h5>Clareamento</h5> 
+                            <p>O clareamento dental é um tratamento realizado com substâncias químicas, que modificam a cor do dente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #EA0952;">
                             <h4>Periodontia</h4> 
-             </div>
-        <div class="flip-card-back">
-            <h5>Periodontia</h5> 
-            <p>Especialidade odontológica responsável pela prevenção e tratamento das doenças que acometem os tecidos</p>
-        </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" style="background-color: #51B750;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h5>Periodontia</h5> 
+                            <p>Especialidade odontológica responsável pela prevenção e tratamento das doenças que acometem os tecidos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #51B750;">
                             <h4>Protese dentaria</h4> 
-             </div>
-        <div class="flip-card-back">
-            <h5>Protese dentaria</h5> 
-            <p>A especialidade de prótese dentária é responsável por reestruturar os tecidos bucais e dentes perdidos.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5>Protese dentaria</h5> 
+                            <p>A especialidade de prótese dentária é responsável por reestruturar os tecidos bucais e dentes perdidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-
-    </div>
-     <!-- Footer -->
-            <footer id="footer">
-                <div class="inner">
-
-                    <div class="container">
-                      <div class="row">
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
                         <div class="col-3">
                             <img src="logo1.png" style="object-fit: cover; width: 100%; height: 90px;">
                         </div>
@@ -271,31 +266,32 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
 
-        function  iniciaModal(modalID){
+            function  iniciaModal(modalID){
 
-        const modal = document.getElementById(modalID);
-        modal.classList.add('mostrar')
-        modal.addEventListener('click', (e) => { 
+            const modal = document.getElementById(modalID);
+            modal.classList.add('mostrar')
+            modal.addEventListener('click', (e) => { 
 
-        if(e.target.id == modalID || e.target.className == 'fechar') {
-        modal.classList.remove('mostrar');
-        }
+            if(e.target.id == modalID || e.target.className == 'fechar') {
+            modal.classList.remove('mostrar');
+            }
 
-        });
+            });
 
-        } 
+            } 
 
-        const botao = document.getElementById('colocar');
-        botao.addEventListener('click', () => iniciaModal('container'));
+            const botao = document.getElementById('colocar');
+            botao.addEventListener('click', () => iniciaModal('container'));
 
-    </script>
-</body>
+        </script>
+    </body>
 </html>
